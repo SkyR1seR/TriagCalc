@@ -1,0 +1,32 @@
+﻿<Window x:Class="калькулятор.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:калькулятор"
+        mc:Ignorable="d"
+        Title="Калькулятор треугольников" Height="500" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="TextBox_a" Grid.Row="1" Grid.Column="1" Margin="10 30 20 20" FontSize="30"/>
+        <TextBox x:Name="TextBox_b" Grid.Row="2" Grid.Column="1" Margin="10 30 20 20" FontSize="30"/>
+        <TextBox x:Name="TextBox_c" Grid.Row="3" Grid.Column="1" Margin="10 30 20 20" FontSize="30"/>
+        <Button Content="Ответ"  Grid.Row="4" Grid.Column="1" Margin="20" FontSize="24" Click="Button_Click"/>
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Введите  стороны треугольника" FontSize="24" FontWeight="Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="a=" FontSize="36"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="b=" FontSize="36"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="c=" FontSize="36"/>
+    </Grid>
+</Window>
